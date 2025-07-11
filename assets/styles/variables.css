@@ -79,4 +79,6 @@
   --radius-s: 0.5rem;
   --shadow-m: 0 0 10px rgb(0 0 0 / 20%);
   --size-image-thumbnail: 12.5rem;
+
+  --border-width-s: 1px;
 }
