@@ -1,2 +1,48 @@
 /* Work Overview
 ############################################################################ */
+.work-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--size-s);
+
+  .work-overview-item {
+    cursor: pointer;
+    transition: background-color var(--tr-fast), transform var(--tr-fast);
+    border-bottom: solid var(--border-width-m) var(--color-pink);
+    background-color: var(--color-lighten-strong);
+    figure {
+      padding: var(--size-s);
+      display: flex;
+      flex-direction: row;
+      gap: var(--size-s);
+
+      p, h3 {
+        font-size: var(--size-m);
+        font-weight: var(--fw-normal);
+      }
+
+      h3 {
+        font-weight: var(--fw-medium);
+      }
+
+      p {
+        color: var(--color-pink);
+      }
+
+      img {
+        min-width: 150px;
+        width: 150px;
+        aspect-ratio: 5/4;
+        object-fit: cover;
+        height: 100%;
+        display: block
+      }
+
+    }
+
+    &:hover {
+      background-color: var(--color-lightest);
+      transform: scale(1.02);     
+    }
+  }
+}
