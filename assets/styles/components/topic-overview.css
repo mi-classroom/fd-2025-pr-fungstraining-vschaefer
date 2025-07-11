@@ -29,10 +29,17 @@
     h3 {
       padding-top: var(--size-m);
       margin-bottom: var(--size-s);
+      font-size: var(--size-m);
+      color: var(--text-color);
+    }
+
+    ul {
       color: var(--color-darkblue);
+
     }
 
     p {
+      color: var(--color-darkblue);
       line-height: var(--lh-tight);
     }
 
